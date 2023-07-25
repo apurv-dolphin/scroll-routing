@@ -1,8 +1,15 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen } from "@testing-library/react";
+import App from "./App";
+import React from "react";
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test("renders app component", () => {
+  render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  );
+
+  // Your testing assertions using screen queries and expect
+  const headingElement = screen.getByRole("heading", { name: /hello/i });
+  expect(headingElement).toBeInTheDocument();
 });

@@ -1,0 +1,41 @@
+svg {
+  cursor: pointer;
+}
+
+.active {
+  transition: transform 0.7s ease-in-out;
+  transform-origin: top;
+}
+
+.top-to-bottom {
+  transform: scaleY(1);
+}
+
+.bottom-to-top {
+  transform: scaleY(0);
+}
+
+body {
+  display: flex;
+  align-item: center;
+  justify-content: center;
+  margin-top: 50vh;
+}
+
+button.contact-btn {
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    to left,
+    #5454ff,
+    #128dff
+  ); /* Gradient effect */
+  background-size: 200% auto; /* Twice the width for the smooth transition */
+  color: #fff;
+  transition: background-position 1s ease-in-out;
+}
+
+.contact-btn:hover {
+  background-position: -100% 0; /* Moves the gradient to the left */
+}

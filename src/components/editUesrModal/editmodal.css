@@ -1,0 +1,38 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.modal-header .btn-close {
+  width: 5%;
+  margin: 0;
+}
+
+.modal-title {
+  text-align: center;
+  width: 95%;
+}
+
+.my-actions {
+  margin: 0 2em;
+}
+.order-1 {
+  order: 1;
+}
+.order-2 {
+  order: 2;
+}
+.order-3 {
+  order: 3;
+}
+
+.right-gap {
+  margin-right: auto;
+}
